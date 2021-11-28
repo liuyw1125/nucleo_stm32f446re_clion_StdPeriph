@@ -5,7 +5,7 @@
 #include "stdio.h"
 
 
-//引脚定义
+//增加引脚定义
 /*******************************************************/
 #define DEBUG_USART                       USART2
 #define USART_CLK                         RCC_APB1Periph_USART2
