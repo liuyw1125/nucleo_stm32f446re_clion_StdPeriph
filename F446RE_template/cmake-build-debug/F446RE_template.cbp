@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="F446RE_template"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/STMICR~1/mingw64/bin/mingw32-make.exe -f &quot;D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/STMICR~1/mingw64/bin/mingw32-make.exe -f &quot;D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/STMICR~1/mingw64/bin/mingw32-make.exe -f &quot;D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/STMICR~1/mingw64/bin/mingw32-make.exe -f &quot;D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/STMICR~1/mingw64/bin/mingw32-make.exe -f &quot;D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/STMICR~1/mingw64/bin/mingw32-make.exe -f &quot;D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/STMICR~1/mingw64/bin/mingw32-make.exe -f &quot;D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/STMICR~1/mingw64/bin/mingw32-make.exe -f &quot;D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="F446RE_template.elf">
+				<Option output="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/cmake-build-debug/F446RE_template.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_STDPERIPH_DRIVER"/>
+					<Add option="-DSTM32F446xx"/>
+					<Add directory="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/CMSIS/Include"/>
+					<Add directory="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/inc"/>
+					<Add directory="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/User"/>
+					<Add directory="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/User/led"/>
+					<Add directory="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/User/systick"/>
+					<Add directory="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/User/usart"/>
+					<Add directory="c:\program files\stmicroelectronics\gnu-tools-arm-embedded\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include/c++/9.3.1"/>
+					<Add directory="c:\program files\stmicroelectronics\gnu-tools-arm-embedded\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include/c++/9.3.1/arm-none-eabi"/>
+					<Add directory="c:\program files\stmicroelectronics\gnu-tools-arm-embedded\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include/c++/9.3.1/backward"/>
+					<Add directory="c:\program files\stmicroelectronics\gnu-tools-arm-embedded\bin\../lib/gcc/arm-none-eabi/9.3.1/include"/>
+					<Add directory="c:\program files\stmicroelectronics\gnu-tools-arm-embedded\bin\../lib/gcc/arm-none-eabi/9.3.1/include-fixed"/>
+					<Add directory="c:\program files\stmicroelectronics\gnu-tools-arm-embedded\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/STMICR~1/mingw64/bin/mingw32-make.exe -f &quot;D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/cmake-build-debug/Makefile&quot;  VERBOSE=1 F446RE_template.elf"/>
+					<CompileFile command="C:/PROGRA~1/STMICR~1/mingw64/bin/mingw32-make.exe -f &quot;D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/STMICR~1/mingw64/bin/mingw32-make.exe -f &quot;D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/STMICR~1/mingw64/bin/mingw32-make.exe -f &quot;D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="F446RE_template.elf/fast">
+				<Option output="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/cmake-build-debug/F446RE_template.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_STDPERIPH_DRIVER"/>
+					<Add option="-DSTM32F446xx"/>
+					<Add directory="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/CMSIS/Include"/>
+					<Add directory="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/inc"/>
+					<Add directory="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/User"/>
+					<Add directory="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/User/led"/>
+					<Add directory="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/User/systick"/>
+					<Add directory="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/User/usart"/>
+					<Add directory="c:\program files\stmicroelectronics\gnu-tools-arm-embedded\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include/c++/9.3.1"/>
+					<Add directory="c:\program files\stmicroelectronics\gnu-tools-arm-embedded\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include/c++/9.3.1/arm-none-eabi"/>
+					<Add directory="c:\program files\stmicroelectronics\gnu-tools-arm-embedded\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include/c++/9.3.1/backward"/>
+					<Add directory="c:\program files\stmicroelectronics\gnu-tools-arm-embedded\bin\../lib/gcc/arm-none-eabi/9.3.1/include"/>
+					<Add directory="c:\program files\stmicroelectronics\gnu-tools-arm-embedded\bin\../lib/gcc/arm-none-eabi/9.3.1/include-fixed"/>
+					<Add directory="c:\program files\stmicroelectronics\gnu-tools-arm-embedded\bin\../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/STMICR~1/mingw64/bin/mingw32-make.exe -f &quot;D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/cmake-build-debug/Makefile&quot;  VERBOSE=1 F446RE_template.elf/fast"/>
+					<CompileFile command="C:/PROGRA~1/STMICR~1/mingw64/bin/mingw32-make.exe -f &quot;D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/STMICR~1/mingw64/bin/mingw32-make.exe -f &quot;D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/STMICR~1/mingw64/bin/mingw32-make.exe -f &quot;D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/STMICR~1/mingw64/bin/mingw32-make.exe -f &quot;D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/STMICR~1/mingw64/bin/mingw32-make.exe -f &quot;D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/STMICR~1/mingw64/bin/mingw32-make.exe -f &quot;D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/STMICR~1/mingw64/bin/mingw32-make.exe -f &quot;D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F446RETx_FLASH.ld">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/inc/misc.h">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_can.h">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_cec.h">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_crc.h">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_cryp.h">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_dac.h">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_dbgmcu.h">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_dcmi.h">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_dfsdm.h">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_dma.h">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_dma2d.h">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_exti.h">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_fmc.h">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_fmpi2c.h">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_hash.h">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_i2c.h">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_iwdg.h">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_lptim.h">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_ltdc.h">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_qspi.h">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rng.h">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rtc.h">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_sai.h">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_sdio.h">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_spdifrx.h">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_spi.h">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_tim.h">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_usart.h">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_wwdg.h">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/src/misc.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_adc.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_can.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cec.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_crc.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_aes.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_des.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_tdes.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dac.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dbgmcu.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dcmi.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dfsdm.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dma.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dma2d.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_exti.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_flash.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_fmc.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_fmpi2c.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_hash.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_hash_md5.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_hash_sha1.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_i2c.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_iwdg.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_lptim.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_ltdc.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_pwr.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_qspi.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rng.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_sai.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_sdio.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_spdifrx.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_spi.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_syscfg.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_tim.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_usart.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_wwdg.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/User/led/bsp_led.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/User/led/bsp_led.h">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/User/main.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/User/stm32f4xx_conf.h">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/User/stm32f4xx_it.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/User/stm32f4xx_it.h">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/User/syscalls.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/User/system_stm32f4xx.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/User/systick/bsp_systick.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/User/systick/bsp_systick.h">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/User/usart/bsp_debug_usart.c">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/User/usart/bsp_debug_usart.h">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/startup/startup_stm32f446xx.s">
+			<Option target="F446RE_template.elf"/>
+		</Unit>
+		<Unit filename="D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

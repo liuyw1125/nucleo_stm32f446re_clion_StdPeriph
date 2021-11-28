@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="F446RE_template" targetName="F446RE_template.elf" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="102dea89-b099-4001-9177-249408246b9f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1vUIIP4NkTd9oK2jlYOt74ISm7m" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RunManager" selected="OpenOCD Download &amp; Run.OCD F446RE_template">
+    <configuration name="F446RE_template.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="F446RE_template" TARGET_NAME="F446RE_template.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="F446RE_template" RUN_TARGET_NAME="F446RE_template.elf">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.F446RE_template.elf" />
+      <item itemvalue="OpenOCD Download &amp; Run.OCD F446RE_template" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="102dea89-b099-4001-9177-249408246b9f" name="Default Changelist" comment="" />
+      <created>1626610159754</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1626610159754</updated>
+      <workItem from="1626610162737" duration="25333000" />
+      <workItem from="1626919731266" duration="11000" />
+      <workItem from="1627217517577" duration="9000" />
+      <workItem from="1628732163262" duration="22750000" />
+      <workItem from="1628821368568" duration="8000" />
+      <workItem from="1632157252726" duration="2783000" />
+      <workItem from="1632160930042" duration="4000" />
+      <workItem from="1638013728760" duration="5593000" />
+      <workItem from="1638060935516" duration="2255000" />
+    </task>
+    <task id="LOCAL-00001" summary="数据提交测试文件">
+      <created>1638061282514</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1638061282515</updated>
+    </task>
+    <task id="LOCAL-00002" summary="数据修改提交">
+      <created>1638061383912</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1638061383912</updated>
+    </task>
+    <task id="LOCAL-00003" summary="数据修改提交2">
+      <created>1638061534991</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1638061534991</updated>
+    </task>
+    <task id="LOCAL-00004" summary="测试文件夹功能">
+      <created>1638061655347</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1638061655347</updated>
+    </task>
+    <task id="LOCAL-00005" summary="第一次提交完整是bsp基本驱动，全项目提交">
+      <created>1638061860172</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1638061860172</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="数据提交测试文件" />
+    <MESSAGE value="数据修改提交" />
+    <MESSAGE value="数据修改提交2" />
+    <MESSAGE value="测试文件夹功能" />
+    <MESSAGE value="第一次提交完整是bsp基本驱动，全项目提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="第一次提交完整是bsp基本驱动，全项目提交" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="364" y="0" key="CommitChangelistDialog2" timestamp="1638061856105">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="364" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1638061856105" />
+    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1638061052986">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1638061052986" />
+    <state width="1493" height="185" key="GridCell.Tab.0.bottom" timestamp="1638022244259">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="185" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1638022244259" />
+    <state width="1493" height="185" key="GridCell.Tab.0.center" timestamp="1638022244259">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="185" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1638022244259" />
+    <state width="1493" height="185" key="GridCell.Tab.0.left" timestamp="1638022244259">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="185" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1638022244259" />
+    <state width="1493" height="185" key="GridCell.Tab.0.right" timestamp="1638022244259">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="185" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1638022244259" />
+    <state x="270" y="61" key="SettingsEditor" timestamp="1638061001600">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="270" y="61" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1638061001600" />
+    <state x="762" y="0" width="781" height="840" key="dock-window-1" timestamp="1638017051892">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="762" y="0" width="781" height="840" key="dock-window-1/0.0.1536.834@0.0.1536.834" timestamp="1638017051892" />
+    <state x="-6" y="0" width="781" height="840" key="dock-window-2" timestamp="1638017051892">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="-6" y="0" width="781" height="840" key="dock-window-2/0.0.1536.834@0.0.1536.834" timestamp="1638017051892" />
+  </component>
+</project>

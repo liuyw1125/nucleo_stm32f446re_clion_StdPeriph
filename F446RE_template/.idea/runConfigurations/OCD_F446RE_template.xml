@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration name="OCD F446RE_template" type="com.jetbrains.cidr.embedded.openocd.conf.type" factoryName="com.jetbrains.cidr.embedded.openocd.conf.factory" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="F446RE_template" TARGET_NAME="F446RE_template.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="F446RE_template" RUN_TARGET_NAME="F446RE_template.elf">
+    <openocd gdb-port="3333" telnet-port="4444" board-config="C:\Users\overfly\Desktop\STM32_HAL_nucleo\clion_template\F446RE_template\st_nucleo_f4.cfg" reset-type="INIT" download-type="ALWAYS" />
+    <method v="2">
+      <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+    </method>
+  </configuration>
+</component>
