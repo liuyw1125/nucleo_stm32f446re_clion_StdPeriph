@@ -1899,6 +1899,7 @@ CMakeFiles/F446RE_template.elf.dir/User/stm32f4xx_it.c.obj
  ../STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_wwdg.h
  ../User/stm32f4xx_conf.h
  ../User/systick/bsp_systick.h
+ ../User/usart/bsp_debug_usart.h
  D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/User/stm32f4xx_it.c
  D:/nucleo_stm32f446re_clion_StdPeriph/F446RE_template/User/stm32f4xx_it.h
 CMakeFiles/F446RE_template.elf.dir/User/syscalls.c.obj

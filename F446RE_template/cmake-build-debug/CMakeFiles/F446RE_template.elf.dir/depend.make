@@ -1898,6 +1898,7 @@ CMakeFiles/F446RE_template.elf.dir/User/stm32f4xx_it.c.obj: ../STM32F4xx_StdPeri
 CMakeFiles/F446RE_template.elf.dir/User/stm32f4xx_it.c.obj: ../STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_wwdg.h
 CMakeFiles/F446RE_template.elf.dir/User/stm32f4xx_it.c.obj: ../User/stm32f4xx_conf.h
 CMakeFiles/F446RE_template.elf.dir/User/stm32f4xx_it.c.obj: ../User/systick/bsp_systick.h
+CMakeFiles/F446RE_template.elf.dir/User/stm32f4xx_it.c.obj: ../User/usart/bsp_debug_usart.h
 CMakeFiles/F446RE_template.elf.dir/User/stm32f4xx_it.c.obj: ../User/stm32f4xx_it.c
 CMakeFiles/F446RE_template.elf.dir/User/stm32f4xx_it.c.obj: ../User/stm32f4xx_it.h
 
