@@ -3,95 +3,120 @@
 #define PUTCHAR_PROTOTYPE int __io_putchar(int ch)
 #define GETCHAR_PROTOTYPE int __io_getchar(void)
 
+//static void NVIC_Config(void)
+//{
+//    NVIC_InitTypeDef NVIC_InitStruct;
+//
+//    /*åµŒå¥—å‘é‡ä¸­æ–­æŽ§åˆ¶å™¨ç»„é€‰æ‹©*/
+//    NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+//
+//    /*é…ç½®USART2ä¸ºä¸­æ–­æº*/
+//    NVIC_InitStruct.NVIC_IRQChannel = USART2_IRQn;
+//    /*é…ç½®ä¸»ä¼˜å…ˆçº§ä¸º1*/
+//    NVIC_InitStruct.NVIC_IRQChannelPreemptionPriority = 1;
+//    /*é…ç½®å­ä¼˜å…ˆçº§ä¸º1*/
+//    NVIC_InitStruct.NVIC_IRQChannelSubPriority = 1;
+//    /*ä½¿èƒ½ä¸­æ–­*/
+//    NVIC_InitStruct.NVIC_IRQChannelCmd = ENABLE;
+//    /*åˆå§‹åŒ–é…ç½®NVIC*/
+//    NVIC_Init(&NVIC_InitStruct);
+//
+//}
+
+
 void Debug_USART_Config(void)
 {
     /* Disable I/O buffering for STDOUT stream, so that
     * chars are sent out as soon as they are printed.
-    * »º³åÇøÎª0£¬Ò»ÓÐÊý¾Ý¾Í·¢¡£
+    * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îª0ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ý¾Í·ï¿½ï¿½ï¿½
     */
     setvbuf(stdout, NULL, _IONBF, 0);
 
     GPIO_InitTypeDef GPIO_InitStruct;
     USART_InitTypeDef USART_InitStruct;
 
-/*----------------------1_´®¿ÚÏà¹ØµÄGPIO³õÊ¼»¯-------------------------*/
-    /*Ê¹ÄÜGPIOAÊ±ÖÓ*/
+/*----------------------1_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Øµï¿½GPIOï¿½ï¿½Ê¼ï¿½ï¿½-------------------------*/
+    /*Ê¹ï¿½ï¿½GPIOAÊ±ï¿½ï¿½*/
     RCC_AHB1PeriphClockCmd(USART_RX_GPIO_CLK|USART_TX_GPIO_CLK, ENABLE);
 
-    /*Ê¹ÄÜUSARTÊ±ÖÓ*/
+    /*Ê¹ï¿½ï¿½USARTÊ±ï¿½ï¿½*/
     RCC_APB1PeriphClockCmd(USART_CLK, ENABLE);
 
-    /*GPIO³õÊ¼»¯*/
+    /*GPIOï¿½ï¿½Ê¼ï¿½ï¿½*/
     GPIO_InitStruct.GPIO_OType = GPIO_OType_PP;
     GPIO_InitStruct.GPIO_PuPd = GPIO_PuPd_UP;
     GPIO_InitStruct.GPIO_Speed = GPIO_Fast_Speed;
 
-    /*ÅäÖÃTXÒý½ÅÎª¸´ÓÃ¹¦ÄÜ*/
+    /*ï¿½ï¿½ï¿½ï¿½TXï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½Ã¹ï¿½ï¿½ï¿½*/
     GPIO_InitStruct.GPIO_Mode = GPIO_Mode_AF;
     GPIO_InitStruct.GPIO_Pin = USART_TX_PIN;
     GPIO_Init(USART_TX_GPIO_PORT, &GPIO_InitStruct);
 
-    /*ÅäÖÃRXÒý½ÅÎª¸´ÓÃ¹¦ÄÜ*/
+    /*ï¿½ï¿½ï¿½ï¿½RXï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½Ã¹ï¿½ï¿½ï¿½*/
     GPIO_InitStruct.GPIO_Mode = GPIO_Mode_AF;
     GPIO_InitStruct.GPIO_Pin = USART_RX_PIN  ;
     GPIO_Init(USART_RX_GPIO_PORT , &GPIO_InitStruct);
 
-    /*Á´½ÓPXxµ½USARTx_Tx*/
+    /*ï¿½ï¿½ï¿½ï¿½PXxï¿½ï¿½USARTx_Tx*/
     GPIO_PinAFConfig(USART_TX_GPIO_PORT, USART_TX_SOURCE, USART_TX_AF);
-    /*Á´½ÓPXxµ½USARTx_Rx*/
+    /*ï¿½ï¿½ï¿½ï¿½PXxï¿½ï¿½USARTx_Rx*/
     GPIO_PinAFConfig(USART_RX_GPIO_PORT, USART_RX_SOURCE, USART_RX_AF);
 
-/*----------------------2_´®¿ÚÅäÖÃ³õÊ¼»¯-------------------------*/
-    /* ²¨ÌØÂÊÉèÖÃ£º115200 */
+/*----------------------2_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã³ï¿½Ê¼ï¿½ï¿½-------------------------*/
+    /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½115200 */
     USART_InitStruct.USART_BaudRate = USART_BAUDRATE;
-    /* ×Ö³¤(Êý¾ÝÎ»+Ð£ÑéÎ»)£º8 */
+    /* ï¿½Ö³ï¿½(ï¿½ï¿½ï¿½ï¿½Î»+Ð£ï¿½ï¿½Î»)ï¿½ï¿½8 */
     USART_InitStruct.USART_WordLength = USART_WordLength_8b;
-    /* Í£Ö¹Î»£º1¸öÍ£Ö¹Î» */
+    /* Í£Ö¹Î»ï¿½ï¿½1ï¿½ï¿½Í£Ö¹Î» */
     USART_InitStruct.USART_StopBits = USART_StopBits_1;
-    /* Ð£ÑéÎ»Ñ¡Ôñ£º²»Ê¹ÓÃÐ£Ñé */
+    /* Ð£ï¿½ï¿½Î»Ñ¡ï¿½ñ£º²ï¿½Ê¹ï¿½ï¿½Ð£ï¿½ï¿½ */
     USART_InitStruct.USART_Parity = USART_Parity_No;
-    /* Ó²¼þÁ÷¿ØÖÆ£º²»Ê¹ÓÃÓ²¼þÁ÷ */
+    /* Ó²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½Ó²ï¿½ï¿½ï¿½ï¿½ */
     USART_InitStruct.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
-    /* USARTÄ£Ê½¿ØÖÆ£ºÍ¬Ê±Ê¹ÄÜ½ÓÊÕºÍ·¢ËÍ */
+    /* USARTÄ£Ê½ï¿½ï¿½ï¿½Æ£ï¿½Í¬Ê±Ê¹ï¿½Ü½ï¿½ï¿½ÕºÍ·ï¿½ï¿½ï¿½ */
     USART_InitStruct.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
-    /* Íê³ÉUSART³õÊ¼»¯ÅäÖÃ */
+    /* ï¿½ï¿½ï¿½USARTï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
     USART_Init(DEBUG_USART, &USART_InitStruct);
 
-    /*Ê¹ÄÜ´®¿Ú*/
+    /*????NVIC?????????Ð¶?*/
+    //NVIC_Config();
+    /* ??????????Ð¶? */
+    //USART_ITConfig(USART2, USART_IT_RXNE, ENABLE);
+    /*Ê¹ï¿½Ü´ï¿½ï¿½ï¿½*/
     USART_Cmd(DEBUG_USART, ENABLE);
 
 }
 
-/*****************  ·¢ËÍÒ»¸ö×Ö·û **********************/
+/*****************  ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ **********************/
 void Usart_SendByte( USART_TypeDef * pUSARTx, uint8_t ch)
 {
-    /* ·¢ËÍÒ»¸ö×Ö½ÚÊý¾Ýµ½USART */
+    /* ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½ï¿½Ýµï¿½USART */
     USART_SendData(pUSARTx,ch);
 
-    /* µÈ´ý·¢ËÍÊý¾Ý¼Ä´æÆ÷Îª¿Õ */
+    /* ï¿½È´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý¼Ä´ï¿½ï¿½ï¿½Îªï¿½ï¿½ */
     while (USART_GetFlagStatus(pUSARTx, USART_FLAG_TXE) == RESET);
 }
 
-/*****************  ·¢ËÍÒ»¸ö16Î»Êý **********************/
+/*****************  ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½16Î»ï¿½ï¿½ **********************/
 void Usart_SendHalfWord( USART_TypeDef * pUSARTx, uint16_t ch)
 {
     uint8_t temp_h, temp_l;
 
-    /* È¡³ö¸ß°ËÎ» */
+    /* È¡ï¿½ï¿½ï¿½ß°ï¿½Î» */
     temp_h = (ch&0XFF00)>>8;
-    /* È¡³öµÍ°ËÎ» */
+    /* È¡ï¿½ï¿½ï¿½Í°ï¿½Î» */
     temp_l = ch&0XFF;
 
-    /* ·¢ËÍ¸ß°ËÎ» */
+    /* ï¿½ï¿½ï¿½Í¸ß°ï¿½Î» */
     USART_SendData(pUSARTx,temp_h);
     while (USART_GetFlagStatus(pUSARTx, USART_FLAG_TXE) == RESET);
 
-    /* ·¢ËÍµÍ°ËÎ» */
+    /* ï¿½ï¿½ï¿½ÍµÍ°ï¿½Î» */
     USART_SendData(pUSARTx,temp_l);
     while (USART_GetFlagStatus(pUSARTx, USART_FLAG_TXE) == RESET);
 }
 
-/*****************  ·¢ËÍ×Ö·û´® **********************/
+/*****************  ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ **********************/
 void Usart_SendString( USART_TypeDef * pUSARTx, char *str)
 {
     unsigned int k=0;
@@ -101,12 +126,12 @@ void Usart_SendString( USART_TypeDef * pUSARTx, char *str)
         k++;
     } while(*(str + k)!='\0');
 
-    /* µÈ´ý·¢ËÍÍê³É */
+    /* ï¿½È´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
     while(USART_GetFlagStatus(pUSARTx,USART_FLAG_TC)==RESET)
     {}
 }
 
-///ÖØ¶¨Ïòc¿âº¯Êýprintfµ½´®¿Ú£¬ÖØ¶¨Ïòºó¿ÉÊ¹ÓÃprintfº¯Êý
+///ï¿½Ø¶ï¿½ï¿½ï¿½cï¿½âº¯ï¿½ï¿½printfï¿½ï¿½ï¿½ï¿½ï¿½Ú£ï¿½ï¿½Ø¶ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½printfï¿½ï¿½ï¿½ï¿½
 PUTCHAR_PROTOTYPE {
     /* Place your implementation of fputc here */
     /* e.g. write a character to the USART */
@@ -119,10 +144,10 @@ PUTCHAR_PROTOTYPE {
     return ch;
 }
 
-///ÖØ¶¨Ïòc¿âº¯Êýscanfµ½´®¿Ú£¬ÖØÐ´Ïòºó¿ÉÊ¹ÓÃscanf¡¢getcharµÈº¯Êý
+///ï¿½Ø¶ï¿½ï¿½ï¿½cï¿½âº¯ï¿½ï¿½scanfï¿½ï¿½ï¿½ï¿½ï¿½Ú£ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½scanfï¿½ï¿½getcharï¿½Èºï¿½ï¿½ï¿½
 
 GETCHAR_PROTOTYPE{
-    /* µÈ´ý´®¿ÚÊäÈëÊý¾Ý */
+    /* ï¿½È´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
     while (USART_GetFlagStatus(DEBUG_USART, USART_FLAG_RXNE) == RESET){
     }
 

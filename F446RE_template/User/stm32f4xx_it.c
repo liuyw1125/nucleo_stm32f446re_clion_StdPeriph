@@ -30,6 +30,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f4xx_it.h"
 #include "bsp_systick.h"
+#include "bsp_debug_usart.h"
 /** @addtogroup Template_Project
   * @{
   */
@@ -152,6 +153,16 @@ void SysTick_Handler(void)
 /*  available peripheral interrupt handler's name please refer to the startup */
 /*  file (startup_stm32f4xx.s).                                               */
 /******************************************************************************/
+
+//void USART2_IRQHandler(void)
+//{
+//    uint8_t ucTemp;
+//    if(USART_GetITStatus(DEBUG_USART ,USART_IT_RXNE)!=RESET)
+//    {
+//        ucTemp = USART_ReceiveData(DEBUG_USART );
+//        USART_SendData(DEBUG_USART ,ucTemp);
+//    }
+//}
 
 /**
   * @brief  This function handles PPP interrupt request.
