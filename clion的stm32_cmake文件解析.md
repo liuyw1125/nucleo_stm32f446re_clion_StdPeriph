@@ -8,9 +8,9 @@
 
 ​	备注：clion官网的产品文档页面，原版英文界面，这里方便你们查看，就谷歌翻译了界面,大家可以观看这里来学习clion开发嵌入式，也可以翻看我之前的专栏。
 
-​	网址：https://www.jetbrains.com/help/clion/embedded-overview.html
+​	网址：https://www.jetbrains.com/help/clion/embedded-overview.htm
 
-![001官方文档](C:\Users\overfly\Desktop\b站写专栏\第三篇\photo\001官方文档.PNG)
+![001官方文档](..\nucleo_stm32f446re_clion_StdPeriph\photo\001官方文档.PNG)
 
 
 
@@ -22,7 +22,7 @@
 
 ​	就想着，有没有一个工具，能够把cubemx生成的sw4stm32工程直接用软件解析成对应的cmake文件，以代替手动编码！没错，这位老哥，直接又手撸一个clion插件，直接集成生成，调试，修改一条龙服务。
 
-![002插件](C:\Users\overfly\Desktop\b站写专栏\第三篇\photo\002插件.png)
+![002插件](..\nucleo_stm32f446re_clion_StdPeriph\photo\002插件.png)
 
 ​	接着最骚的来了，他于 2018 年底加入了clion的团队，并已将插件集成到 CLion 中，并推进对[CLion 的](https://www.jetbrains.com/clion/)嵌入式开发支持。因此，现在OpenOCD 调试器支持和与 STM32CubeMX 的集成开箱即用。
 
@@ -30,7 +30,7 @@
 
 ​	网址：https://blog.jetbrains.com/clion/2016/06/clion-for-embedded-development/
 
-![003教程](C:\Users\overfly\Desktop\b站写专栏\第三篇\photo\003教程.PNG)
+![003教程](..\nucleo_stm32f446re_clion_StdPeriph\photo\003教程.PNG)
 
 
 
@@ -56,7 +56,7 @@
 
 ​	事实上，从源代码生成可执行文件可以分为四个步骤，分别是预处理（Preprocessing）、编译（Compilation）、汇编（Assembly）和链接（Linking）。
 
-​	![006原理](C:\Users\overfly\Desktop\b站写专栏\第三篇\photo\006原理.png)
+​	![006原理](..\nucleo_stm32f446re_clion_StdPeriph\photo\006原理.png)
 
 ​	cmake无非是以上过程的一些封装，因为大型工程文件太多，不可能手敲命令行慢慢编译的。把cmake上的一些操作，和上述过程对应起来，就非常容易理解。而嵌入式开发无非用的只是gcc-arm-none-eabi工具链编译。
 
@@ -242,7 +242,7 @@ endif ()
 
 
 
-![005编译设定](C:\Users\overfly\Desktop\b站写专栏\第三篇\photo\005编译设定.PNG)
+![005编译设定](..\nucleo_stm32f446re_clion_StdPeriph\photo\005编译设定.PNG)
 
 
 
